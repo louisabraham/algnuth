@@ -1,0 +1,29 @@
+NAME
+    algnuth.ideals
+
+DESCRIPTION
+    This module provides functions to manipulate
+    extension fields given their minimal polynomial.
+
+FUNCTIONS
+    factorIdeals(P)
+        Finds the ideals of the ring of integers
+        of the algebraic number field whose
+        minimal polynomial is P
+    
+    factorial(...)
+        factorial(x) -> Integral
+        
+        Find x!. Raise a ValueError if x is negative or non-integral.
+    
+    idealsContaining(P, p)
+        Ideals of the extension field of minimal
+        polynomial P containing the prime p
+    
+    minkowski_bound(P)
+        Any ideal of the ring of integers
+        of the algebraic number field whose
+        minimal polynomial is P contains
+        an integer N such that
+        1 ≤ N ≤ minkowski_bound(P)
+

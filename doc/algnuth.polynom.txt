@@ -1,0 +1,184 @@
+NAME
+    algnuth.polynom
+    
+     - Modular arithmetic
+
+CLASSES
+    builtins.object
+        algnuth.polynom.ModInt
+        algnuth.polynom.Polynomial
+    
+    class ModInt(builtins.object)
+     |  Integers of Z/pZ
+     |  
+     |  Methods defined here:
+     |  
+     |  __add__(a, b)
+     |  
+     |  __bool__(self)
+     |  
+     |  __eq__(a, b)
+     |      Return self==value.
+     |  
+     |  __hash__(self)
+     |      Return hash(self).
+     |  
+     |  __init__(self, a, n)
+     |      Initialize self.  See help(type(self)) for accurate signature.
+     |  
+     |  __mul__(a, b)
+     |  
+     |  __neg__(a)
+     |  
+     |  __pow__(P, k)
+     |  
+     |  __radd__(a, b)
+     |  
+     |  __repr__(self)
+     |      Return repr(self).
+     |  
+     |  __rmul__(a, b)
+     |  
+     |  __rtruediv__(a, k)
+     |  
+     |  __str__(self)
+     |      Return str(self).
+     |  
+     |  __sub__(a, b)
+     |  
+     |  __truediv__(a, b)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  extended_euclid(a, b)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+    
+    class Polynomial(builtins.object)
+     |  Generic class for polynomials
+     |  Works with int, float and ModInt
+     |  
+     |  Methods defined here:
+     |  
+     |  __add__(P, Q)
+     |  
+     |  __bool__(self)
+     |  
+     |  __call__(self, x)
+     |      Call self as a function.
+     |  
+     |  __eq__(P, Q)
+     |      Return self==value.
+     |  
+     |  __floordiv__(A, B)
+     |  
+     |  __getitem__(self, x)
+     |  
+     |  __hash__(self)
+     |      Return hash(self).
+     |  
+     |  __init__(self, C=None)
+     |      Initialize self.  See help(type(self)) for accurate signature.
+     |  
+     |  __iter__(self)
+     |  
+     |  __len__(self)
+     |  
+     |  __lt__()
+     |      Return self<value.
+     |  
+     |  __mod__(A, B)
+     |  
+     |  __mul__(P, Q)
+     |  
+     |  __neg__(P)
+     |  
+     |  __pow__(P, k)
+     |  
+     |  __repr__(self)
+     |      Return repr(self).
+     |  
+     |  __rmul__(P, Q)
+     |  
+     |  __str__(self)
+     |      Return str(self).
+     |  
+     |  __sub__(P, Q)
+     |  
+     |  computeQ(P)
+     |  
+     |  euclidean_division(A, B)
+     |  
+     |  eval(self, x)
+     |  
+     |  factor(P)
+     |      Factorization of P
+     |      only in Z/pZ
+     |  
+     |  factor_unit(P)
+     |      Berlekamp's algorithm
+     |      only in Z/pZ
+     |  
+     |  gcd(A, B)
+     |  
+     |  isinteger(P)
+     |  
+     |  isreal(P)
+     |  
+     |  prime(self)
+     |  
+     |  reduceP(P, p)
+     |  
+     |  resultant(P, Q)
+     |      Resultant of two real polynomials
+     |  
+     |  shift(self, d)
+     |  
+     |  sturm(P)
+     |      Number of distinct real roots
+     |      by Sturm's theorem.
+     |      Only works on int or float coefficients
+     |  
+     |  sylvester(P, Q)
+     |      Sylvester's matrix
+     |  
+     |  trim(C)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  gaussianElimKer(M, zero, one)
+     |      Outputs an element of the kernel of M
+     |      zero and one are elements of the same field
+     |  
+     |  ppfactors(fz)
+     |  
+     |  sign_changes(l)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+     |  
+     |  deg
+     |  
+     |  disc
+     |      Discriminant of a real polynomial
+     |  
+     |  r1
+     |      Number of real roots with multiplicity
+     |  
+     |  r2
+

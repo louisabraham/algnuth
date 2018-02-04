@@ -1,0 +1,27 @@
+NAME
+    algnuth.jacobi
+    
+     - Jacobi symbol, Solovay–Strassen primality test and sieve of Eratosthenes
+
+FUNCTIONS
+    expsign(sign, exp)
+        optimization of sign ** exp
+    
+    gcd(...)
+        gcd(x, y) -> int
+        greatest common divisor of x and y
+    
+    jacobi(m, n)
+        Jacobi's symbol
+        the rule for (-1/n) is not used
+    
+    sieve(limit=100000)
+        Sieve of Eratosthenes
+    
+    solovay_strassen(n, prec=50)
+        Solovay–Strassen primality test
+        with error probability less than 2^-prec
+    
+    test_solovay_strassen(limit=100000)
+        Runs in ~20s with limit = 10^5
+

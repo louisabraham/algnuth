@@ -1,0 +1,68 @@
+NAME
+    algnuth.quadratic
+    
+     - Basic functions on quadratic forms
+
+FUNCTIONS
+    Cl(D)
+        List of classes of discriminant D
+    
+    Prim(D)
+        List of primitive forms of discriminant D
+    
+    a(D)
+        Number of ambiguous classes
+    
+    ambiguous_classes(D)
+    
+    ceil(...)
+        ceil(x)
+        
+        Return the ceiling of x as an Integral.
+        This is the smallest integer >= x.
+    
+    display(a, b, c)
+        Displays a form
+    
+    display_ambiguous_classes(D)
+    
+    display_classes(D)
+    
+    display_primitive_forms(D)
+    
+    func(a, b, c)
+        Transforms a triple into a function
+    
+    gcd(...)
+        gcd(x, y) -> int
+        greatest common divisor of x and y
+    
+    genera(D)
+    
+    genus(a, b, c)
+    
+    h(D)
+        Number of primitive forms of disciminant D
+    
+    index(D)
+    
+    is_ambiguous(a, b, c)
+    
+    reduce(...)
+        reduce(function, sequence[, initial]) -> value
+        
+        Apply a function of two arguments cumulatively to the items of a sequence,
+        from left to right, so as to reduce the sequence to a single value.
+        For example, reduce(lambda x, y: x+y, [1, 2, 3, 4, 5]) calculates
+        ((((1+2)+3)+4)+5).  If initial is present, it is placed before the items
+        of the sequence in the calculation, and serves as a default when the
+        sequence is empty.
+    
+    reduced(a, b, c)
+        Reduced form
+    
+    sqrt(...)
+        sqrt(x)
+        
+        Return the square root of x.
+

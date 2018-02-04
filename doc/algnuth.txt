@@ -1,0 +1,9 @@
+NAME
+    algnuth
+
+PACKAGE CONTENTS
+    ideals
+    jacobi
+    polynom
+    quadratic
+

@@ -3,6 +3,11 @@ Algebraic Number Theory package
 
 **Louis Abraham** and **Yassir Akram**
 
+Installation
+------------
+
+    pip install --upgrade git+https://github.com/louisabraham/algnuth
+
 Features
 --------
 

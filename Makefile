@@ -27,6 +27,7 @@ pypi: dist
 	twine upload dist/*
 	
 dist:
+	rm dist/*
 	./setup.py bdist_wheel --universal
 
 .PHONY: doc dist

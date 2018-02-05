@@ -80,7 +80,7 @@ Features
     >>> print((A // B) * B + A % B)
     4⋅X^3+3⋅X^2+2⋅X+1
 
-### Berlekamp's algorithm
+### Berlekamp's factorization algorithm
 
     >>> P = Polynomial([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
     >>> Pmodp = P.reduceP(41)

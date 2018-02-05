@@ -18,9 +18,9 @@ endef
 export exportdoc
 
 doc:
-	@-mkdir doc
+	@-mkdir docs
 	@path=$$(pwd); \
-	cd doc; \
+	cd docs; \
 	PYTHONPATH=$$path:$$PYTHONPATH python3 -c "$$exportdoc" algnuth algnuth.polynom algnuth.quadratic algnuth.jacobi algnuth.ideals
 
 pypi: dist

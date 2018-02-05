@@ -10,7 +10,7 @@ def read(fname):
 
 setup(
     name='algnuth',
-    version='0.0.0',
+    version='0.0.1',
     author='Louis Abraham',
     author_email='louis.abraham@yahoo.fr',
     description='Algebraic Number Theory package',

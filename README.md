@@ -6,6 +6,10 @@ Algebraic Number Theory package
 Installation
 ------------
 
+    pip install --upgrade algnuth
+
+or get the development version with:
+
     pip install --upgrade git+https://github.com/louisabraham/algnuth
 
 Features

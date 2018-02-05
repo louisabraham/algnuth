@@ -55,20 +55,23 @@ def solovay_strassen(n, prec=50):
     return True
 
 
-def sieve(limit=10**5):
+def sieve(n):
     """
     Sieve of Eratosthenes
+    sieve(n) -> list of primes in range(n)
     """
-    l = [True] * (limit + 1)
-    l[0] = l[1] = 0
-    next = 2
-    while next < limit:
-        for k in range(2, limit // next + 1):
-            l[k * next] = False
-        next += 1
-        while next < limit and not l[next]:
-            next += 1
-    return [i for i in range(limit) if l[i]]
+    n -= 1
+    # l[i] = True iff i is prime
+    # ignore the first two values
+    l = [True] * (n + 1)
+    for x in range(2, round(n**.5) + 1):
+        # all factors are ≤ int(n**.5)
+        # round is there in case of float error
+        if l[x]:
+            # there are exactly (n // x - 1)
+            # multiples of x greater than x
+            l[2 * x::x] = [False] * (n // x - 1)
+    return [i for i in range(2, n + 1) if l[i]]
 
 
 def test_solovay_strassen(limit=10**5):

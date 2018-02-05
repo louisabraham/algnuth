@@ -15,8 +15,9 @@ FUNCTIONS
         Jacobi's symbol
         the rule for (-1/n) is not used
     
-    sieve(limit=100000)
+    sieve(n)
         Sieve of Eratosthenes
+        sieve(n) -> list of primes in range(n)
     
     solovay_strassen(n, prec=50)
         Solovay–Strassen primality test

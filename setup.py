@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import os
 from setuptools import setup
 
@@ -8,6 +10,7 @@ def read(fname):
 
 setup(
     name='algnuth',
+    version='0.0.0',
     author='Louis Abraham',
     author_email='louis.abraham@yahoo.fr',
     description='Algebraic Number Theory package',

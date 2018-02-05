@@ -97,7 +97,7 @@ CLASSES
      |  
      |  __mod__(A, B)
      |      Polynomial euclidian division
-     |      or reduce modulo an integer
+     |      or modular reduction
      |  
      |  __mul__(P, Q)
      |  

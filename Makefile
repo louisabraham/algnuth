@@ -23,4 +23,10 @@ doc:
 	cd doc; \
 	PYTHONPATH=$$path:$$PYTHONPATH python3 -c "$$exportdoc" algnuth algnuth.polynom algnuth.quadratic algnuth.jacobi algnuth.ideals
 
-.PHONY: doc
+pypi: dist
+	twine upload dist/*
+	
+dist:
+	./setup.py bdist_wheel --universal
+
+.PHONY: doc dist

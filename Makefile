@@ -30,4 +30,7 @@ dist:
 	rm dist/*
 	./setup.py bdist_wheel --universal
 
+clean:
+	rm -rf algnuth.egg-info build dist
+
 .PHONY: doc dist

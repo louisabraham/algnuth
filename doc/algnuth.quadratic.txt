@@ -42,7 +42,7 @@ FUNCTIONS
     genus(a, b, c)
     
     h(D)
-        Number of primitive forms of disciminant D
+        Number of primitive forms of discriminant D
     
     index(D)
     

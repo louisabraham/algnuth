@@ -83,7 +83,7 @@ def display_primitive_forms(D):
 
 def h(D):
     """
-    Number of primitive forms of disciminant D
+    Number of primitive forms of discriminant D
     """
     return len(Prim(D))
 

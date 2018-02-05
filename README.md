@@ -61,14 +61,16 @@ Features
 ### Modular arithmetic
 
     >>> P = Polynomial([1, 2, 3])
-    >>> Pmodp = P.reduceP(41)
-    >>> print(P ** 3)
-    27⋅X^6+54⋅X^5+63⋅X^4+44⋅X^3+21⋅X^2+6⋅X+1
+    >>> Pmodp = P % 41
+    >>> print(Pmodp ** 3)
+    27⋅X^6+13⋅X^5+22⋅X^4+3⋅X^3+21⋅X^2+6⋅X+1
+    >>> print((P ** 3) % 41)
+    27⋅X^6+13⋅X^5+22⋅X^4+3⋅X^3+21⋅X^2+6⋅X+1
 
 ### Polynomial division
 
-    >>> A = Polynomial([1, 2, 3, 4]).reduceP(7)
-    >>> B = Polynomial([0, 1, 2]).reduceP(7)
+    >>> A = Polynomial([1, 2, 3, 4]) % 7
+    >>> B = Polynomial([0, 1, 2]) % 7
     >>> print(A)
     4⋅X^3+3⋅X^2+2⋅X+1
     >>> print(B)
@@ -83,7 +85,7 @@ Features
 ### Berlekamp's factorization algorithm
 
     >>> P = Polynomial([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
-    >>> Pmodp = P.reduceP(41)
+    >>> Pmodp = P % 41
     >>> print(Polynomial.ppfactors(Pmodp.factor()))
     12⋅(X+31)⋅X⋅(X^2+40⋅X+24)⋅(X^2+36⋅X+13)⋅(X^6+34⋅X^5+26⋅X^4+13⋅X^3+25⋅X^2+26⋅X+35)
 

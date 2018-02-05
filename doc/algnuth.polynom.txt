@@ -96,6 +96,8 @@ CLASSES
      |      Return self<value.
      |  
      |  __mod__(A, B)
+     |      Polynomial euclidian division
+     |      or reduce modulo an integer
      |  
      |  __mul__(P, Q)
      |  

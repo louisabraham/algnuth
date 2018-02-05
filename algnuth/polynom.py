@@ -202,8 +202,16 @@ class Polynomial:
         return A.euclidean_division(B)[0]
 
     def __mod__(A, B):
-        assert isinstance(B, Polynomial)
-        return A.euclidean_division(B)[1]
+        """
+        Polynomial euclidian division
+        or modular reduction
+        """
+        if isinstance(B, Polynomial):
+            return A.euclidean_division(B)[1]
+        else:
+            assert isinstance(B, int)
+            assert all(isinstance(c, int) for c in A)
+            return A.reduceP(B)
 
     def __lt__(): return A.deg < B.deg
 

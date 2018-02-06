@@ -28,7 +28,7 @@ pypi: dist
 	
 dist:
 	rm dist/*
-	./setup.py bdist_wheel --universal
+	./setup.py bdist_wheel
 
 clean:
 	rm -rf algnuth.egg-info build dist

@@ -18,6 +18,7 @@ setup(
     keywords='algebra',
     url='https://github.com/louisabraham/algnuth',
     packages=['algnuth'],
+    install_requires=['numpy'],
     long_description=read('README.md'),
     classifiers=[
         'Topic :: Scientific/Engineering :: Mathematics'

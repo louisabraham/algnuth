@@ -1,3 +1,5 @@
+![travis](https://travis-ci.org/louisabraham/algnuth.svg?branch=master)
+
 Algebraic Number Theory package
 ===============================
 

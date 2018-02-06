@@ -122,7 +122,7 @@ def genus(a, b, c):
 
 
 def genera(D):
-    l = formes_reduites(D)
+    l = Prim(D)
     s = set()
     for t in l:
         s.add(genus(*t))

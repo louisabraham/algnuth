@@ -92,7 +92,7 @@ CLASSES
      |  
      |  __len__(self)
      |  
-     |  __lt__()
+     |  __lt__(A, B)
      |      Return self<value.
      |  
      |  __mod__(A, B)

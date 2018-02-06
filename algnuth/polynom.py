@@ -213,7 +213,7 @@ class Polynomial:
             assert all(isinstance(c, int) for c in A)
             return A.reduceP(B)
 
-    def __lt__(): return A.deg < B.deg
+    def __lt__(A, B): return A.deg < B.deg
 
     def __bool__(self): return bool(self.C)
 

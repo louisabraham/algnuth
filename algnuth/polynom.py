@@ -2,6 +2,9 @@
 Modular arithmetic
 """
 
+from collections import defaultdict
+import numpy as np
+
 
 class ModInt:
 
@@ -92,10 +95,6 @@ class ModInt:
 
     def __str__(self):
         return '%s' % self.v
-
-
-from collections import defaultdict
-import numpy as np
 
 
 class Polynomial:
@@ -235,7 +234,7 @@ class Polynomial:
         for l in range(len(M)):
             while M[l].deg >= 0:
                 idp = M[l].deg
-                if pivots[idp] == None:
+                if pivots[idp] is None:
                     pivots[idp] = l
                     break
                 else:
@@ -308,11 +307,10 @@ class Polynomial:
         only in Z/pZ
         """
         cd = P[-1]
-        p = cd.n
         if P.deg == 0:
             return (cd, defaultdict(int))
         P = P * (1 / cd)
-        return (cd, Polynomial.factor_unit(P))
+        return (cd, P.factor_unit())
 
     @staticmethod
     def ppfactors(fz):

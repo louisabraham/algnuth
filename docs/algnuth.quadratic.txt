@@ -15,12 +15,6 @@ FUNCTIONS
     
     ambiguous_classes(D)
     
-    ceil(...)
-        ceil(x)
-        
-        Return the ceiling of x as an Integral.
-        This is the smallest integer >= x.
-    
     display(a, b, c)
         Displays a form
     

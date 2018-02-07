@@ -2,7 +2,7 @@
 Basic functions on quadratic forms
 """
 
-from math import sqrt, ceil, gcd
+from math import sqrt, gcd
 
 from functools import reduce, partial
 gcdl = partial(reduce, gcd)

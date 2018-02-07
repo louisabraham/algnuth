@@ -26,11 +26,14 @@ doc:
 pypi: dist
 	twine upload dist/*
 	
-dist:
+dist: flake8
 	-rm dist/*
 	./setup.py bdist_wheel
 
 clean:
 	rm -rf algnuth.egg-info build dist
+
+flake8:
+	flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
 
 .PHONY: doc dist

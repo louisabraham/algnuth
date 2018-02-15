@@ -45,19 +45,19 @@ False
 ```python
 >>> from algnuth.quadratic import *
 >>> display_classes(-44)
-x^2 + 11y^2
-2x^2 + 2xy + 6y^2
-3x^2 - 2xy + 4y^2
-3x^2 + 2xy + 4y^2
+x^2 + 11⋅y^2
+2⋅x^2 + 2⋅xy + 6⋅y^2
+3⋅x^2 - 2⋅xy + 4⋅y^2
+3⋅x^2 + 2⋅xy + 4⋅y^2
 >>> display_primitive_forms(-44)
-x^2 + 11y^2
-3x^2 - 2xy + 4y^2
-3x^2 + 2xy + 4y^2
+x^2 + 11⋅y^2
+3⋅x^2 - 2⋅xy + 4⋅y^2
+3⋅x^2 + 2⋅xy + 4⋅y^2
 >>> display_ambiguous_classes(-44)
-x^2 + 11y^2
-2x^2 + 2xy + 6y^2
+x^2 + 11⋅y^2
+2⋅x^2 + 2⋅xy + 6⋅y^2
 >>> display(*reduced(18, -10, 2))
-2x^2 + 2xy + 6y^2
+2⋅x^2 + 2⋅xy + 6⋅y^2
 ```
 
 ### Real polynoms

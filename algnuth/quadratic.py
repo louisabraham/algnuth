@@ -42,19 +42,19 @@ def display(a, b, c):
     if a:
         if a < 0:
             ans += ' - '
-        ans += (abs(a) != 1) * str(abs(a)) + "x^2"
+        ans += (abs(a) != 1) * (str(abs(a)) + '⋅') + "x^2"
     if b:
         if b > 0:
             ans += ' + '
         elif b < 0:
             ans += ' - '
-        ans += (abs(b) != 1) * str(abs(b)) + "xy"
+        ans += (abs(b) != 1) * (str(abs(b)) + '⋅') + "xy"
     if c:
         if c > 0:
             ans += ' + '
         elif c < 0:
             ans += ' - '
-        ans += (abs(c) != 1) * str(abs(c)) + "y^2"
+        ans += (abs(c) != 1) * (str(abs(c)) + '⋅') + "y^2"
     print(ans)
 
 

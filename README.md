@@ -19,7 +19,7 @@ Features
 
 ### Jacobi symbol
 
-```pythoh
+```python
 >>> from algnuth.jacobi import jacobi
 >>> jacobi(3763, 20353)
 -1

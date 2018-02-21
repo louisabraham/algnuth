@@ -29,7 +29,8 @@ gmpy2 support
 
 -   [gmpy2](https://github.com/aleaxit/gmpy) support for elliptic curves
 -   implement alternative faster sieves using
-    [gmpy2](https://gmpy2.readthedocs.io/en/latest/advmpz.html) or numpy
+    [gmpy2](https://gmpy2.readthedocs.io/en/latest/advmpz.html) or
+    [numpy](https://stackoverflow.com/a/3035188/5133167)
 -   interface the [Advanced Number Theory Functions from
     gmpy2](https://gmpy2.readthedocs.io/en/latest/advmpz.html#advanced-number-theory-functions)
     and replicate them in pure Python for compatibility

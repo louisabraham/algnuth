@@ -60,7 +60,7 @@ x^2 + 11⋅y^2
 2⋅x^2 + 2⋅xy + 6⋅y^2
 ```
 
-### Real polynoms
+### Real polynomials
 
 ``` python
 >>> from algnuth.polynom import Polynomial

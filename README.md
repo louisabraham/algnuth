@@ -25,7 +25,7 @@ Features
 -1
 ```
 
-### Solovay--Strassen primality test
+### Solovay-Strassen primality test
 
 ``` python
 >>> from algnuth.jacobi import solovay_strassen

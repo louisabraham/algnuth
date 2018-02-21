@@ -13,7 +13,16 @@ Elliptic curves
 -   Weierstrass form
 -   Montgomery form
 -   Generic class for other int implementations
--   For Montgomery: PRAC and safe Ladder
+-   For Montgomery: [PRAC and safe
+    Ladder](https://arxiv.org/pdf/1703.01863.pdf)
+
+Other references:
+-----------------
+
+-   <https://wstein.org/edu/124/lenstra/lenstra.pdf>
+-   <https://wstein.org/edu/124/misc/montgomery.pdf>
+-   <https://wstein.org/edu/124/misc/arjen_lenstra_factoring.pdf>
+-   <https://wstein.org/edu/124/misc/koblitz_ecc.pdf>
 
 gmpy2 support
 =============
@@ -28,7 +37,9 @@ gmpy2 support
 Factorization algorithms
 ========================
 
--   Lenstra's algorithm on elliptic curves
+-   [Lenstra's
+    algorithm](https://wstein.org/edu/124/lenstra/lenstra.pdf) on
+    elliptic curves
 -   Multiple-polynomial quadratic sieve
 -   Parallelism with
     [SCOOP](https://scoop.readthedocs.io/en/0.7/api.html?highlight=futures#scoop.futures.as_completed)
@@ -42,3 +53,6 @@ Maybe
 
 -   Multiprocessing support: better than SCOOP locally and because of
     the ability to terminate
+-   [General number field
+    sieve](https://wstein.org/129/references/Lenstra-Lenstra-Manasse-Pollard-The%20number%20field%20sieve.pdf),
+    see also <https://github.com/radii/msieve>

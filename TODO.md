@@ -10,7 +10,7 @@ Pseudoprimality tests
 Elliptic curves
 ===============
 
--   Weierstrass form
+-   [Weierstrass form](https://github.com/pkruk/pylenstra)
 -   Montgomery form
 -   Generic class for other int implementations
 -   For Montgomery: [PRAC and safe
@@ -40,7 +40,8 @@ Factorization algorithms
 -   [Lenstra's
     algorithm](https://wstein.org/edu/124/lenstra/lenstra.pdf) on
     elliptic curves
--   Multiple-polynomial quadratic sieve
+-   [Multiple polynomial quadratic
+    sieve](https://codegolf.stackexchange.com/a/9088/47040)
 -   Parallelism with
     [SCOOP](https://scoop.readthedocs.io/en/0.7/api.html?highlight=futures#scoop.futures.as_completed)
 -   Hart's one line factoring algorithm

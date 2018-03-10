@@ -15,6 +15,8 @@ Elliptic curves
 -   Generic class for other int implementations
 -   For Montgomery: [PRAC and safe
     Ladder](https://arxiv.org/pdf/1703.01863.pdf)
+-   Add other curves and formulas from the [Explicit-Formulas
+    Database](https://hyperelliptic.org/EFD/)?
 
 Other references:
 -----------------
@@ -49,6 +51,14 @@ Factorization algorithms
     ([pdf](http://wrap.warwick.ac.uk/54707/1/WRAP_Hart_S1446788712000146a.pdf))
 -   Other algorithms from
     [primefac](https://pypi.python.org/pypi/primefac)
+
+Other algorithms
+================
+
+-   Modular square root: Tonelli--Shanks and Cipolla's algorithms
+-   Algorithms from [E. Bach, J.O. Shallit *Algorithmic Number Theory:
+    Efficient algorithms* MIT
+    Press, (1996)](https://mitpress.mit.edu/books/algorithmic-number-theory)
 
 Maybe
 =====

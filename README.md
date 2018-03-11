@@ -19,7 +19,7 @@ Features
 
 ### Jacobi symbol
 
-``` python
+``` pycon
 >>> from algnuth.jacobi import jacobi
 >>> jacobi(3763, 20353)
 -1
@@ -27,7 +27,7 @@ Features
 
 ### Solovay-Strassen primality test
 
-``` python
+``` pycon
 >>> from algnuth.jacobi import solovay_strassen
 >>> p = 12779877140635552275193974526927174906313992988726945426212616053383820179306398832891367199026816638983953765799977121840616466620283861630627224899026453
 >>> q = 12779877140635552275193974526927174906313992988726945426212616053383820179306398832891367199026816638983953765799977121840616466620283861630627224899027521
@@ -42,7 +42,7 @@ False
 
 ### Quadratic forms
 
-``` python
+``` pycon
 >>> from algnuth.quadratic import *
 >>> display_classes(-44)
 x^2 + 11⋅y^2
@@ -62,7 +62,7 @@ x^2 + 11⋅y^2
 
 ### Real polynomials
 
-``` python
+``` pycon
 >>> from algnuth.polynom import Polynomial
 >>> P = Polynomial([0] * 10 + [-1, 0, 1])
 >>> print(P)
@@ -79,7 +79,7 @@ X^12-X^10
 
 ### Modular arithmetic
 
-``` python
+``` pycon
 >>> P = Polynomial([1, 2, 3])
 >>> Pmodp = P % 41
 >>> print(Pmodp ** 3)
@@ -90,7 +90,7 @@ X^12-X^10
 
 ### Polynomial division
 
-``` python
+``` pycon
 >>> A = Polynomial([1, 2, 3, 4]) % 7
 >>> B = Polynomial([0, 1, 2]) % 7
 >>> print(A)
@@ -107,7 +107,7 @@ X^12-X^10
 
 ### Berlekamp's factorization algorithm
 
-``` python
+``` pycon
 >>> P = Polynomial([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
 >>> Pmodp = P % 41
 >>> print(Polynomial.ppfactors(Pmodp.factor()))
@@ -116,7 +116,7 @@ X^12-X^10
 
 ### Unique Factorization of Ideals
 
-``` python
+``` pycon
 >>> from algnuth.ideals import factorIdeals
 >>> factorIdeals(Polynomial([4, 0, 0, 1]))
 X^3+4 mod 2 = X^3

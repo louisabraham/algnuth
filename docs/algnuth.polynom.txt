@@ -52,6 +52,13 @@ CLASSES
      |  Static methods defined here:
      |  
      |  extended_euclid(a, b)
+     |      Extended Euclid algorithm
+     |      
+     |      Return
+     |      ------
+     |      x : int
+     |      y : int
+     |          a * x + b * y = gcd(a, b)
      |  
      |  ----------------------------------------------------------------------
      |  Data descriptors defined here:

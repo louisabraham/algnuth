@@ -11,6 +11,9 @@ FUNCTIONS
         gcd(x, y) -> int
         greatest common divisor of x and y
     
+    isprimerm(n, l=[2, 325, 9375, 28178, 450775, 9780504, 1795265022])
+        Miller–Rabin primality test
+    
     jacobi(m, n)
         Jacobi's symbol
         the rule for (-1/n) is not used

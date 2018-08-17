@@ -74,6 +74,28 @@ def sieve(n):
     return [i for i in range(2, n + 1) if l[i]]
 
 
+def isprimerm(n, l=[2, 325, 9375, 28178, 450775, 9780504, 1795265022]):
+    if n == 1:
+        return False
+    if n in l:
+        return True
+    if n % 2 == 0:
+        return False
+    b = 0
+    for a in l:
+        if pow(a, n - 1, n) != 1:
+            return False
+        if b == 0 or pow(a, b, n) != 1:
+            r = 1
+            b = n - 1
+            while b % 2 == 0 and r == 1:
+                r = pow(a, b, n)
+                b = b // 2
+            if r != 1 and r != n - 1:
+                return False
+    return True
+
+
 def test_solovay_strassen(limit=10**5):
     """
     Runs in ~20s with limit = 10^5

@@ -77,18 +77,26 @@ class ModInt:
 
     @staticmethod
     def extended_euclid(a, b):
-        up, vp = (1 if a >= 0 else -1), 0
-        u, v = 0, (1 if b >= 0 else -1)
-        rp, r = a * up, b * v
-        while r:
-            rr = rp // r
-            rp -= rr * r
-            up -= rr * u
-            vp -= rr * v
-            rp, r = r, rp
-            up, u = u, up
-            vp, v = v, vp
-        return up, vp
+        """Extended Euclid algorithm
+
+        Return
+        ------
+        x : int
+        y : int
+            a * x + b * y = gcd(a, b)
+        """
+        A, B = a, b
+        sa, sb = (1 if a >= 0 else -1), (1 if b >= 0 else -1)
+        xp, yp = 1, 0
+        x, y = 0, 1
+        while b:
+            assert A * xp + B * yp == a
+            assert A * x + B * y == b
+            r = a // b
+            a, b = b, a % b
+            x, xp = xp - r * x, x
+            y, yp = yp - r * y, y
+        return sa * xp, sb * yp
 
     def __repr__(self):
         return '%s(%s, %s)' % (self.__class__.__name__, self.v, self.n)

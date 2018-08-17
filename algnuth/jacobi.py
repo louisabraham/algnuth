@@ -75,6 +75,9 @@ def sieve(n):
 
 
 def isprimerm(n, l=[2, 325, 9375, 28178, 450775, 9780504, 1795265022]):
+    """
+    Miller–Rabin primality test
+    """
     if n == 1:
         return False
     if n in l:

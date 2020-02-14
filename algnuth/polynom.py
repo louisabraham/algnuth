@@ -64,12 +64,24 @@ class ModInt:
                 break
             A *= A
         return V
+    
+
+    def inv(self):
+        if self.v == 0:
+            raise ZeroDivisionError
+        return ModInt(ModInt._inv(self.v, self.n), self.n)
+
+    @staticmethod
+    def _inv(k, n):
+        k %= n
+        if k == 1:
+            return k
+        return (n - n // k) * ModInt._inv(n % k, n) % n
 
     def __truediv__(a, b):
         assert isinstance(b, ModInt)
         assert a.n == b.n
-        return ModInt(
-            a.v * ModInt.extended_euclid(b.v, b.n)[0], a.n)
+        return a * b.inv()
 
     def __rtruediv__(a, k):
         assert isinstance(k, int)
